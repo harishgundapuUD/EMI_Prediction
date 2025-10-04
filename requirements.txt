@@ -1,0 +1,18 @@
+# Data processing
+pandas
+numpy
+
+# Machine learning
+scikit-learn
+xgboost
+joblib
+
+# Visualization
+matplotlib
+seaborn
+
+# MLflow
+mlflow
+
+# Web app
+streamlit
