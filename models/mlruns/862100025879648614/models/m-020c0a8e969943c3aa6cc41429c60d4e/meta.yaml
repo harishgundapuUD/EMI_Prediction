@@ -1,0 +1,10 @@
+artifact_location: /content/models/mlruns/862100025879648614/models/m-020c0a8e969943c3aa6cc41429c60d4e/artifacts
+creation_timestamp: 1759569581238
+experiment_id: '862100025879648614'
+last_updated_timestamp: 1759569628982
+model_id: m-020c0a8e969943c3aa6cc41429c60d4e
+model_type: null
+name: RandomForestRegressor
+source_run_id: 227c3d89782c44e4947c268ce734dd5d
+status: 2
+status_message: null
