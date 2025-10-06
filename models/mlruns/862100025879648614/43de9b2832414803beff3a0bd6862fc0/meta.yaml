@@ -1,0 +1,14 @@
+artifact_uri: /content/models/mlruns/862100025879648614/43de9b2832414803beff3a0bd6862fc0/artifacts
+end_time: 1759568701487
+entry_point_name: ''
+experiment_id: '862100025879648614'
+lifecycle_stage: active
+run_id: 43de9b2832414803beff3a0bd6862fc0
+run_name: LogisticRegression_Classification
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759568689458
+status: 3
+tags: []
+user_id: root

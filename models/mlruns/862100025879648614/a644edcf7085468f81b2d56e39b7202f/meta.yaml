@@ -1,0 +1,14 @@
+artifact_uri: /content/models/mlruns/862100025879648614/a644edcf7085468f81b2d56e39b7202f/artifacts
+end_time: 1759568848970
+entry_point_name: ''
+experiment_id: '862100025879648614'
+lifecycle_stage: active
+run_id: a644edcf7085468f81b2d56e39b7202f
+run_name: XGBoostClassifier_Classification
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759568813016
+status: 3
+tags: []
+user_id: root

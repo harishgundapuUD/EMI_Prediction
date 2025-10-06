@@ -1,0 +1,10 @@
+artifact_location: /content/models/mlruns/862100025879648614/models/m-d6576f20c36049f68152e25102165905/artifacts
+creation_timestamp: 1759568801911
+experiment_id: '862100025879648614'
+last_updated_timestamp: 1759568811954
+model_id: m-d6576f20c36049f68152e25102165905
+model_type: null
+name: RandomForestClassifier
+source_run_id: bc8aee57aea24ef58843dd26025fd6b2
+status: 2
+status_message: null

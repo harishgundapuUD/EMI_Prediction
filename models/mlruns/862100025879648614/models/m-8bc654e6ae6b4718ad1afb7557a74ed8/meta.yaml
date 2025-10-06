@@ -1,0 +1,10 @@
+artifact_location: /content/models/mlruns/862100025879648614/models/m-8bc654e6ae6b4718ad1afb7557a74ed8/artifacts
+creation_timestamp: 1759568844702
+experiment_id: '862100025879648614'
+last_updated_timestamp: 1759568848964
+model_id: m-8bc654e6ae6b4718ad1afb7557a74ed8
+model_type: null
+name: XGBoostClassifier
+source_run_id: a644edcf7085468f81b2d56e39b7202f
+status: 2
+status_message: null

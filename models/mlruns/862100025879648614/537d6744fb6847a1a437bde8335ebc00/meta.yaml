@@ -1,0 +1,14 @@
+artifact_uri: /content/models/mlruns/862100025879648614/537d6744fb6847a1a437bde8335ebc00/artifacts
+end_time: 1759569650969
+entry_point_name: ''
+experiment_id: '862100025879648614'
+lifecycle_stage: active
+run_id: 537d6744fb6847a1a437bde8335ebc00
+run_name: XGBoostRegressor_Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759569639733
+status: 3
+tags: []
+user_id: root
