@@ -263,88 +263,88 @@ if __name__ == "__main__":
 
 
 # how to use the saved models for prediction
-import joblib
-import numpy as np
-import pandas as pd
-import os
+# import joblib
+# import numpy as np
+# import pandas as pd
+# import os
 
-# ================== 1️⃣ Load all models ==================
-model_dir = "models"  # folder where all models are saved
+# # ================== 1️⃣ Load all models ==================
+# model_dir = "models"  # folder where all models are saved
 
-# Load classifiers and regressors
-classifier_files = [f for f in os.listdir(model_dir) if f.startswith("best_classifier") or f.endswith(".pkl") and "Classifier" in f]
-regressor_files = [f for f in os.listdir(model_dir) if f.startswith("best_regressor") or f.endswith(".pkl") and "Regressor" in f]
+# # Load classifiers and regressors
+# classifier_files = [f for f in os.listdir(model_dir) if f.startswith("best_classifier") or f.endswith(".pkl") and "Classifier" in f]
+# regressor_files = [f for f in os.listdir(model_dir) if f.startswith("best_regressor") or f.endswith(".pkl") and "Regressor" in f]
 
-classifiers = {os.path.splitext(f)[0]: joblib.load(os.path.join(model_dir, f)) for f in classifier_files}
-regressors = {os.path.splitext(f)[0]: joblib.load(os.path.join(model_dir, f)) for f in regressor_files}
+# classifiers = {os.path.splitext(f)[0]: joblib.load(os.path.join(model_dir, f)) for f in classifier_files}
+# regressors = {os.path.splitext(f)[0]: joblib.load(os.path.join(model_dir, f)) for f in regressor_files}
 
-# Load feature names
-feature_names = joblib.load(os.path.join(model_dir, "feature_names.pkl"))
+# # Load feature names
+# feature_names = joblib.load(os.path.join(model_dir, "feature_names.pkl"))
 
-# ================== 2️⃣ User Input ==================
-user_input_dict = {
-    'age': 30,
-    'gender': 1,
-    'marital_status': 0,
-    'education': 2,
-    'monthly_salary': 50000,
-    'years_of_employment': 5,
-    'company_type': 3,
-    'house_type': 2,
-    'monthly_rent': 15000,
-    'family_size': 3,
-    'dependents': 1,
-    'school_fees': 5000,
-    'college_fees': 0,
-    'travel_expenses': 3000,
-    'groceries_utilities': 8000,
-    'other_monthly_expenses': 2000,
-    'existing_loans': 0,
-    'current_emi_amount': 7000,
-    'credit_score': 750,
-    'bank_balance': 20000,
-    'emi_scenario_E-commerce': 1,
-    'emi_scenario_Home Appliances': 0,
-    'emi_scenario_Vehicle': 0,
-    'emi_scenario_Personal Loan': 0,
-    'emi_scenario_Education': 0,
-    'emergency_fund': 10000
-}
+# # ================== 2️⃣ User Input ==================
+# user_input_dict = {
+#     'age': 30,
+#     'gender': 1,
+#     'marital_status': 0,
+#     'education': 2,
+#     'monthly_salary': 50000,
+#     'years_of_employment': 5,
+#     'company_type': 3,
+#     'house_type': 2,
+#     'monthly_rent': 15000,
+#     'family_size': 3,
+#     'dependents': 1,
+#     'school_fees': 5000,
+#     'college_fees': 0,
+#     'travel_expenses': 3000,
+#     'groceries_utilities': 8000,
+#     'other_monthly_expenses': 2000,
+#     'existing_loans': 0,
+#     'current_emi_amount': 7000,
+#     'credit_score': 750,
+#     'bank_balance': 20000,
+#     'emi_scenario_E-commerce': 1,
+#     'emi_scenario_Home Appliances': 0,
+#     'emi_scenario_Vehicle': 0,
+#     'emi_scenario_Personal Loan': 0,
+#     'emi_scenario_Education': 0,
+#     'emergency_fund': 10000
+# }
 
-X_input = pd.DataFrame([user_input_dict])
-X_input = X_input[feature_names]  # match training feature order
+# X_input = pd.DataFrame([user_input_dict])
+# X_input = X_input[feature_names]  # match training feature order
 
-# ================== 3️⃣ Choose Models ==================
-print("Available Classifiers:", list(classifiers.keys()))
-print("Available Regressors:", list(regressors.keys()))
+# # ================== 3️⃣ Choose Models ==================
+# print("Available Classifiers:", list(classifiers.keys()))
+# print("Available Regressors:", list(regressors.keys()))
 
-chosen_clf_name = input("Enter classifier name: ")
-chosen_reg_name = input("Enter regressor name: ")
+# chosen_clf_name = input("Enter classifier name: ")
+# chosen_reg_name = input("Enter regressor name: ")
 
-clf_model = classifiers[chosen_clf_name]
-reg_model = regressors[chosen_reg_name]
+# clf_model = classifiers[chosen_clf_name]
+# reg_model = regressors[chosen_reg_name]
 
-# ================== 4️⃣ Prediction ==================
-class_mapping = {0: "Not Eligible", 1: "High Risk", 2: "Eligible"}
+# # ================== 4️⃣ Prediction ==================
+# class_mapping = {0: "Not Eligible", 1: "High Risk", 2: "Eligible"}
 
-# Classification
-try:
-    pred_probs = clf_model.predict_proba(X_input)
-    pred_class_index = np.argmax(pred_probs, axis=1)[0]
-    confidence = pred_probs[0, pred_class_index]
-except AttributeError:
-    pred_class_index = clf_model.predict(X_input)[0]
-    confidence = None
+# # Classification
+# try:
+#     pred_probs = clf_model.predict_proba(X_input)
+#     pred_class_index = np.argmax(pred_probs, axis=1)[0]
+#     confidence = pred_probs[0, pred_class_index]
+# except AttributeError:
+#     pred_class_index = clf_model.predict(X_input)[0]
+#     confidence = None
 
-pred_class_label = class_mapping[pred_class_index]
+# pred_class_label = class_mapping[pred_class_index]
 
-# Regression
-pred_max_emi = reg_model.predict(X_input)[0]
+# # Regression
+# pred_max_emi = reg_model.predict(X_input)[0]
 
-# ================== 5️⃣ Output ==================
-print(f"\nSelected Classifier: {chosen_clf_name}")
-print(f"Selected Regressor: {chosen_reg_name}")
-print(f"Predicted EMI Eligibility: {pred_class_label}")
-if confidence is not None:
-    print(f"Confidence: {confidence:.2f}")
-print(f"Predicted Maximum EMI Amount: ₹{pred_max_emi:.2f}")
+# # ================== 5️⃣ Output ==================
+# print(f"\nSelected Classifier: {chosen_clf_name}")
+# print(f"Selected Regressor: {chosen_reg_name}")
+# print(f"Predicted EMI Eligibility: {pred_class_label}")
+# if confidence is not None:
+#     print(f"Confidence: {confidence:.2f}")
+# print(f"Predicted Maximum EMI Amount: ₹{pred_max_emi:.2f}")
