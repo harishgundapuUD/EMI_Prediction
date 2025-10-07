@@ -42,7 +42,7 @@ A lightweight project to predict Equated Monthly Installments (EMIs) for loans u
   - Metrics - Accuracy, Precision, Recall, F1 Score
 - Regression
   - Models - Linear Regression, Random Forest, XG Boost
-  - Metrics - RMSE, MAE, R2, MAPE
+  - Metrics - RMSE (Root Mean Square Error), MAE (Mean Absolute Error), R2, MAPE (Mean Absolute Percentage Error)
 
 ## Project Structure
 
