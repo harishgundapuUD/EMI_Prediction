@@ -1,4 +1,3 @@
-from datetime import datetime
 import os
 import json
 import joblib
@@ -11,8 +10,6 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
-from pathlib import Path
-from mlflow.tracking import MlflowClient
 
 # ----------------------------
 # CONFIG
