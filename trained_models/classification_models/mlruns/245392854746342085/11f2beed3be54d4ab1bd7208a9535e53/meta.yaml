@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/classification_models/mlruns/245392854746342085/11f2beed3be54d4ab1bd7208a9535e53/artifacts
+end_time: 1777203771148
+entry_point_name: ''
+experiment_id: '245392854746342085'
+lifecycle_stage: active
+run_id: 11f2beed3be54d4ab1bd7208a9535e53
+run_name: randomforest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777203683924
+status: 3
+tags: []
+user_id: harish

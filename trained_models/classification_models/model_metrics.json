@@ -1,0 +1,33 @@
+{
+    "models": {
+        "classification": {
+            "logisticregression": {
+                "run_id": "47dd49bdb71047709ada04b49900bdab",
+                "accuracy": 0.9105450236966824,
+                "precision": 0.8862182031629403,
+                "recall": 0.9105450236966824,
+                "f1-score": 0.8915003302790944,
+                "roc-auc": 0.9716058952657808,
+                "bestmodel": "no"
+            },
+            "decisiontree": {
+                "run_id": "433cf4e5ca0d445980440699e9ae04df",
+                "accuracy": 0.9266789351618433,
+                "precision": 0.9013577884917127,
+                "recall": 0.9266789351618433,
+                "f1-score": 0.908376200463869,
+                "roc-auc": 0.9705356481300486,
+                "bestmodel": "no"
+            },
+            "randomforest": {
+                "run_id": "11f2beed3be54d4ab1bd7208a9535e53",
+                "accuracy": 0.9427498235353433,
+                "precision": 0.9196296976352967,
+                "recall": 0.9427498235353433,
+                "f1-score": 0.922091453582833,
+                "roc-auc": 0.9935201221076625,
+                "bestmodel": "yes"
+            }
+        }
+    }
+}

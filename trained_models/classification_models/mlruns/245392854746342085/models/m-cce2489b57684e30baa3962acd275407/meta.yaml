@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/classification_models/mlruns/245392854746342085/models/m-cce2489b57684e30baa3962acd275407/artifacts
+creation_timestamp: 1777203679865
+experiment_id: '245392854746342085'
+last_updated_timestamp: 1777203683902
+model_id: m-cce2489b57684e30baa3962acd275407
+model_type: null
+name: decisiontree
+source_run_id: 433cf4e5ca0d445980440699e9ae04df
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/regression_models/mlruns/191538429961524034/cac123401bd9418b8ac4e48e4f6c4881/artifacts
+end_time: 1777211639096
+entry_point_name: ''
+experiment_id: '191538429961524034'
+lifecycle_stage: active
+run_id: cac123401bd9418b8ac4e48e4f6c4881
+run_name: unequaled-moose-784
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777211627516
+status: 3
+tags: []
+user_id: harish

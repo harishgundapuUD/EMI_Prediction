@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/classification_models/mlruns/245392854746342085/models/m-22dad97fda26465486453f1f167fb532/artifacts
+creation_timestamp: 1777203767204
+experiment_id: '245392854746342085'
+last_updated_timestamp: 1777203771129
+model_id: m-22dad97fda26465486453f1f167fb532
+model_type: null
+name: randomforest
+source_run_id: 11f2beed3be54d4ab1bd7208a9535e53
+status: 2
+status_message: null

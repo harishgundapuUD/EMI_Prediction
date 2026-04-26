@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/regression_models/mlruns/191538429961524034/380fa7a68fbc45adbc5ec904fb6acd60/artifacts
+end_time: 1777211646701
+entry_point_name: ''
+experiment_id: '191538429961524034'
+lifecycle_stage: active
+run_id: 380fa7a68fbc45adbc5ec904fb6acd60
+run_name: chill-bass-801
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777211639102
+status: 3
+tags: []
+user_id: harish

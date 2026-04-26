@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/regression_models/mlruns/191538429961524034/models/m-53fb32ea50c84734b74aac78fc37ed62/artifacts
+creation_timestamp: 1777212100809
+experiment_id: '191538429961524034'
+last_updated_timestamp: 1777212105485
+model_id: m-53fb32ea50c84734b74aac78fc37ed62
+model_type: null
+name: randomforestregressor
+source_run_id: f9033e2a187b41af8e5e574e35468483
+status: 2
+status_message: null

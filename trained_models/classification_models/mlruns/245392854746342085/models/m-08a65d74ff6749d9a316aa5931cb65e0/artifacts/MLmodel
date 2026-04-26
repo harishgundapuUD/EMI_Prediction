@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/classification_models/mlruns/245392854746342085/models/m-08a65d74ff6749d9a316aa5931cb65e0/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.4.0
+model_id: m-08a65d74ff6749d9a316aa5931cb65e0
+model_size_bytes: 3983
+model_uuid: m-08a65d74ff6749d9a316aa5931cb65e0
+prompts: null
+run_id: 47dd49bdb71047709ada04b49900bdab
+utc_time_created: '2026-04-26 11:41:04.512946'

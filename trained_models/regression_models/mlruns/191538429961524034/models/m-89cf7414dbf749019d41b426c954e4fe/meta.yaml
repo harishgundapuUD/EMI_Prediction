@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/regression_models/mlruns/191538429961524034/models/m-89cf7414dbf749019d41b426c954e4fe/artifacts
+creation_timestamp: 1777211628771
+experiment_id: '191538429961524034'
+last_updated_timestamp: 1777211639063
+model_id: m-89cf7414dbf749019d41b426c954e4fe
+model_type: null
+name: linearregression
+source_run_id: cac123401bd9418b8ac4e48e4f6c4881
+status: 2
+status_message: null

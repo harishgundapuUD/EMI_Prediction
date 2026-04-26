@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/classification_models/mlruns/245392854746342085/433cf4e5ca0d445980440699e9ae04df/artifacts
+end_time: 1777203683917
+entry_point_name: ''
+experiment_id: '245392854746342085'
+lifecycle_stage: active
+run_id: 433cf4e5ca0d445980440699e9ae04df
+run_name: decisiontree
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777203675118
+status: 3
+tags: []
+user_id: harish

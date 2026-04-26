@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/regression_models/mlruns/191538429961524034/models/m-46c95ee2fb8c4f558d97122bf06bd99c/artifacts
+creation_timestamp: 1777211642939
+experiment_id: '191538429961524034'
+last_updated_timestamp: 1777211646685
+model_id: m-46c95ee2fb8c4f558d97122bf06bd99c
+model_type: null
+name: decisiontreeregressor
+source_run_id: 380fa7a68fbc45adbc5ec904fb6acd60
+status: 2
+status_message: null

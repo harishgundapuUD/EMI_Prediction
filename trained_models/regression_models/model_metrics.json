@@ -1,0 +1,33 @@
+{
+    "models": {
+        "regression": {
+            "linearregression": {
+                "run_id": "cac123401bd9418b8ac4e48e4f6c4881",
+                "mse": 16873330.382850647,
+                "rmse": 4107.715956934054,
+                "mae": 2949.3651409550985,
+                "r2_score": 0.7170848039950473,
+                "mape": 192.06002192380427,
+                "bestmodel": "no"
+            },
+            "decisiontreeregressor": {
+                "run_id": "380fa7a68fbc45adbc5ec904fb6acd60",
+                "mse": 5240697.44894572,
+                "rmse": 2289.2569643763713,
+                "mae": 1203.1973938970932,
+                "r2_score": 0.9121292055373929,
+                "mape": 24.079157847892134,
+                "bestmodel": "no"
+            },
+            "randomforestregressor": {
+                "run_id": "f9033e2a187b41af8e5e574e35468483",
+                "mse": 1157475.005477545,
+                "rmse": 1075.8601235651154,
+                "mae": 487.7098653971235,
+                "r2_score": 0.9805926120916628,
+                "mape": 8.127037667548114,
+                "bestmodel": "yes"
+            }
+        }
+    }
+}

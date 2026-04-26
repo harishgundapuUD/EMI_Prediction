@@ -1,0 +1,96 @@
+{
+    "mapping":              {
+                                "gender": {
+                                                "m": "male",
+                                                "male": "male",
+                                                "f": "female",
+                                                "female": "female"
+                                            }
+                            },
+    "numerical_columns":   ["age", "monthly_salary", "years_of_employment", 
+                            "monthly_rent", "family_size", "dependents",
+                            "school_fees", "college_fees", "travel_expenses",
+                            "groceries_utilities", "other_monthly_expenses", 
+                            "current_emi_amount", "credit_score", "bank_balance", 
+                            "emergency_fund", "requested_amount", "requested_tenure",
+                            "max_monthly_emi"],
+    "categorical_columns": ["gender", "marital_status", "education", "employment_type",
+                            "company_type", "house_type", "existing_loans", "emi_scenario",
+                            "emi_eligibility"],
+    "expense_cols":        ["monthly_rent", "school_fees", "college_fees",
+                            "travel_expenses", "groceries_utilities",
+                            "other_monthly_expenses", "current_emi_amount"],
+    "limits":              {
+                                "age": [18, 65],
+                                "credit_score": [0, 900]
+                            },
+    "less_important_cols": ["education"],
+    "default_values":      {
+                            "monthly_rent": 0,
+                            "bank_balance": 0,
+                            "emergency_fund": 0
+                           },
+    "one_hot_encode_cols": ["gender", "marital_status", "employment_type", "emi_scenario"],
+    "label_encode_cols":   ["company_type", "house_type", "existing_loans", "emi_eligibility"],
+    "label_encoding_order": {
+                                "company_type": ["mnc", "large indian", "mid-size", "small", "startup"],
+                                "house_type": ["own", "family", "rented"],
+                                "existing_loans": ["no", "yes"],
+                                "emi_eligibility": ["eligible", "high_risk", "not_eligible"]
+                            },
+    "target_columns":       {
+                                "classification": "emi_eligibility",
+                                "regression": "max_monthly_emi"
+                            },
+    "ml_model_dirs":        {
+                                "base_dir": "trained_models",
+                                "classification": "classification_models",
+                                "regression": "regression_models"
+                            },
+    "drop_columns": ["emi_eligibility", "max_monthly_emi"],
+    "eda_analysis": {
+                        "base_dir": "eda_analysis",
+                        "engineered_features": [
+                                                "total_monthly_expenses", "disposable_income", "expense_to_income_ratio", 
+                                                "debt_to_income_ratio", "affordability_ratio", "savings_rate", 
+                                                "financial_buffer", "projected_emi_burden"
+                                            ],
+                        "financial_columns": [
+                                                "monthly_salary", "total_monthly_expenses", "debt_to_income_ratio", "expense_to_income_ratio", 
+                                                "savings_rate", "requested_amount", "requested_tenure", "max_monthly_emi", "monthly_rent",
+                                                "school_fees", "college_fees", "travel_expenses", "groceries_utilities", "other_monthly_expenses"
+                                            ],
+                        "max_emi_columns": [
+                                                "monthly_salary", "monthly_rent", "school_fees", "college_fees", "travel_expenses", 
+                                                "groceries_utilities", "other_monthly_expenses", "current_emi_amount", "requested_amount", 
+                                                "requested_tenure", "debt_to_income_ratio", "expense_to_income_ratio", "savings_rate"
+                                            ]
+                    },
+    "streamlit_data": {
+                            "all_entries": ["age", "gender", "marital_status", "education", "monthly_salary",
+                                            "employment_type", "years_of_employment", "company_type", "house_type",
+                                            "monthly_rent", "family_size", "dependents", "school_fees",
+                                            "college_fees", "travel_expenses", "groceries_utilities",
+                                            "other_monthly_expenses", "existing_loans", "current_emi_amount",
+                                            "credit_score", "bank_balance", "emergency_fund", "emi_scenario",
+                                            "requested_amount", "requested_tenure"],
+                            "limits":       {
+                                                "age": [18, 65],
+                                                "credit_score": [300, 900],
+                                                "years_of_employment": [0, 50],
+                                                "family_size": [1, 10],
+                                                "dependents": [0, 10],
+                                                "requested_tenure": [6, 360]
+                                            },
+                            "specific_entries": {
+                                                    "gender": ["male", "female"],
+                                                    "marital_status": ["yes", "no"],
+                                                    "education": ["professional", "graduate", "high school", "post graduate"],
+                                                    "employment_type": ["private", "government", "self-employed"],
+                                                    "company_type": ["mid-size", "mnc", "startup", "large indian", "small"],
+                                                    "house_type": ["own", "family", "rented"],
+                                                    "existing_loans": ["yes", "no"],
+                                                    "emi_scenario": ["personal loan emi", "e-commerce shopping emi", "education emi", "vehicle emi", "home appliances emi"]                                                
+                                                }
+                        }
+}

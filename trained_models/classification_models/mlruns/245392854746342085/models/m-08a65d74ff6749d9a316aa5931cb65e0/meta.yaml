@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/haris/OneDrive/Desktop/Guvi/Projects/EMI_Prediction/code/trained_models/classification_models/mlruns/245392854746342085/models/m-08a65d74ff6749d9a316aa5931cb65e0/artifacts
+creation_timestamp: 1777203664446
+experiment_id: '245392854746342085'
+last_updated_timestamp: 1777203675088
+model_id: m-08a65d74ff6749d9a316aa5931cb65e0
+model_type: null
+name: logisticregression
+source_run_id: 47dd49bdb71047709ada04b49900bdab
+status: 2
+status_message: null
