@@ -87,8 +87,8 @@ class DataPreprocessor:
         for col, default_val in self.config.get("default_values", {}).items():
             if col in self.data.columns:
                 self.data[col] = self.data[col].fillna(default_val)
-        
-        self.data.to_csv(self.before_encoding_path, index=False)
+        if not testing:
+            self.data.to_csv(self.before_encoding_path, index=False)
 
         # apply one-hot encoding for categorical columns
         self.data = pd.get_dummies(self.data, columns=self.config.get("one_hot_encode_cols", []), drop_first=False)
@@ -132,9 +132,9 @@ class DataPreprocessor:
         
         # ---- clean inf/nan ----
         df.replace([np.inf, -np.inf], np.nan, inplace=True)
-        df.to_csv(self.processed_data_path, index=False)
 
         if not testing:
+            df.to_csv(self.processed_data_path, index=False)
             train_columns = {"train_columns": df.columns.tolist()}
             with open("utils/train_columns.json", "w") as f:
                 json.dump(train_columns, f, indent=4)
